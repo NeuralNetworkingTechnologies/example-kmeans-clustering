@@ -25,8 +25,11 @@ kmeans.clusters.each do |cluster|
   puts "Cities in Cluster: " + cluster.points.map{ |c| c.label }.join(",")
 end
 
+# Output to CSV for visualization
+=begin
 kmeans.clusters.each do |cluster|
   cluster.points.each do |p|
     puts "#{p.label},#{cluster.id},#{p.data[0]},#{p.data[1]}"
   end
 end
+=end
